@@ -1,0 +1,13 @@
+span {
+    font-size:150px;
+    line-height:0.6em;
+    opacity:0.2;
+    float: right;
+    height: 100%;
+}
+
+
+h2, p {
+    text-align: right;
+  }
+  
