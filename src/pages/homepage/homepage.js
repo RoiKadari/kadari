@@ -1,10 +1,20 @@
 import './homepage.css';
 //import Dailyqoute from './dailyquote/dailyquote'
 
+let i = 1;
+function myLoop() { 
+  setTimeout(function() {
+    console.log('Hello! I am an infinite loop and my job is to make sure that the app wont get unloaded from the Heroku server.');
+    i++;
+    if (i < 10) {
+      myLoop();
+    }
+  }, 10000)
+}
+
 const Homepage = () => {
     return ( 
         <div id="homepage">
-        
             <header className="Homepage-header BG-image">
             <div className='Icon-image'>
                 <p className="title1">
@@ -16,6 +26,7 @@ const Homepage = () => {
             </div>
             </header>
             <div className="Homepage-body" />
+            { myLoop() }
             {//<Dailyqoute />
             }
         </div>
