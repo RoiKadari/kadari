@@ -5,13 +5,14 @@
     color: #043055;
     background-size: 200% 100%;
     background-position: 100%;
+    margin-right: 4%;
   }
   
   .App-header h2 {
     font-weight:large;
     color: #043055;
     padding-right: 2%;
-    
+    margin-right: 4%;    
   }
   
 .App-footer {
@@ -58,7 +59,7 @@
     position: relative;
     overflow: scroll;
     direction:ltr;
-    height: 50vmax;
+    height: 100vmax;
   }
   
   .App-zoom {
