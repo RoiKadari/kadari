@@ -25,7 +25,9 @@ const Homepage = () => {
                 </p>
             </div>
             </header>
-            <div className="Homepage-body" />
+            <div className="Homepage-body">
+                <div alt="shraga" className='Shraga-img'/>
+            </div>
             { myLoop() }
             {//<Dailyqoute />
             }
