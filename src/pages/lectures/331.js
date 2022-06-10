@@ -60,11 +60,19 @@ class Lecture331 extends Component {
             <div id="catlinks" className="catlinks">
                 <ul>  
                     מילות מפתח: &nbsp;&nbsp;
-                    <a href="תגית">תגית</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-                    <a href="תגית">תגית</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-                    <a href="תגית">תגית</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-                    <a href="תגית">תגית</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-                    <a href="תגית" >תגית</a> 
+                    <a href="שלום">שלום</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                    <a href="נחלת אבות">נחלת אבות</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                    <a href="הקמת מדינת ישראל">הקמת מדינת ישראל</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                    <a href="היסטוריה">היסטוריה</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                    <a href="עזרא ונחמיה">עזרא ונחמיה</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                    <a href="ערביי ישראל">ערביי ישראל</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                    <a href="ריבונות">ריבונות</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                    <a href="יהודה ושומרון">יהודה ושומרון</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                    <a href="מנחם בגין">מנחם בגין</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                    <a href="אנואר סאדאת">אנואר סאדאת</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                    <a href="משה דיין" >משה דיין</a>&nbsp;&nbsp;|&nbsp;&nbsp; 
+                    <a href="הצופה">הצופה</a>&nbsp;&nbsp;|&nbsp;&nbsp; 
+                    <a href="1977" >1977</a>
                 </ul>
             </div>
             <br/>

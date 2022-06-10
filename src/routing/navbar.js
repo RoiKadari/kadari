@@ -58,7 +58,7 @@ class NavbarAndSearch extends React.Component {
                     <input id="txtSearch" type="text" className="mr3" placeholder="חיפוש"
                     onChange={(e) => {this.setState({ query: e.target.value });}} />
                     <div className="resultsStl">
-                    <b>תגיות</b><hr/>
+                    <b>מילות מפתח</b><hr/>
                         {filteredOptions(query, tags).map((result, i) => (              
                             <a id="results" key={i} href={result}>
                                 {result}<br/>
