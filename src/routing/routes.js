@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Navbar from './navbar';
+import NavbarAndSearch from './navbar';
 import Homepage from '../pages/homepage/homepage';
 import About from '../pages/about/about';
 import Biography from '../pages/biography/biography';
@@ -10,7 +10,7 @@ import Lectures from '../pages/lectures/lectures';
 const Routing = () => {
     return(
         <BrowserRouter>
-            <Navbar />
+            <NavbarAndSearch />
         <Routes> 
             <Route path="/" element={<Homepage />} />
             <Route path="about" element={<About />} />

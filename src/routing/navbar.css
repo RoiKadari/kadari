@@ -6,12 +6,41 @@ nav, input {
 input {
     float: left;
     border: none;
-    font-size: large ;
+    font-size: large;
     background-image: url('https://cdn0.iconfinder.com/data/icons/very-basic-2-android-l-lollipop-icon-pack/24/search-512.png');
     background-size:contain;
     background-repeat: no-repeat;
     padding: 5px 3px;
 } 
+
+.resultsStl {
+    position: absolute;
+    z-index: 100;
+    width: 204px;;
+    left: 65px;
+    top: 70px;
+    background-color: #fff;
+    opacity: 80%;
+    font-size: x-large;
+    font-weight: 600;
+    padding: 20px;
+    border-radius: 5px;
+} 
+
+#results {
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+a {  
+    display: block;
+}
+
+a:hover {
+    background-color: gray;
+    width: 100%;
+}
 
 .navStl {
     z-index: 22;
