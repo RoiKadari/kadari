@@ -31,13 +31,10 @@ input {
     cursor: pointer;
     text-decoration: none;
     color: black;
-}
-
-a {  
     display: block;
 }
 
-a:hover {
+#results:hover {
     background-color: gray;
     width: 100%;
 }
