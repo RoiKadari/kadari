@@ -1,6 +1,8 @@
 import './navbar.css'
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Categories from '../lists-for-search/categories';
+import LecturesList from '../lists-for-search/lecturesList';
 
 
 const filteredOptions = (query, result) => {
@@ -30,12 +32,14 @@ class NavbarAndSearch extends React.Component {
         super(props)
         this.state = {
             query: (""),
-            options: ["תגית", "תגית"]
+            tags: Categories,
+            lecturesNames: LecturesList
         };
     };
     render() {
         const { query } = this.state;
-        const { options } = this.state;  
+        const { tags } = this.state;
+        const { lecturesNames } = this.state;
         
         if (!query) {
             return (
@@ -54,11 +58,18 @@ class NavbarAndSearch extends React.Component {
                     <input id="txtSearch" type="text" className="mr3" placeholder="חיפוש"
                     onChange={(e) => {this.setState({ query: e.target.value });}} />
                     <div className="resultsStl">
-                        {filteredOptions(query, options).map((result, i) => (              
+                    <b>תגיות</b><hr/>
+                        {filteredOptions(query, tags).map((result, i) => (              
                             <a id="results" key={i} href={result}>
                                 {result}<br/>
                             </a> 
-                        ))}  
+                        ))}
+                    <br/><b>מאמרים </b><hr/>
+                        {filteredOptions(query, lecturesNames).map((result, i) => (              
+                            <a id="results" key={i} href={result}>
+                                {result}<br/>
+                            </a> 
+                        ))}
                     </div>
                 </form>
                 <Navigation/>

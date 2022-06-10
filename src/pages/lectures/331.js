@@ -1,10 +1,10 @@
-import "./lectures.css";
+import "./main/lectures.css";
 import React, { Component, createRef } from 'react'
 import PrismaZoom from 'react-prismazoom';
-import text from '../../text/img.jpg';
+import text from '../../text/מדיניות/331.jpg';
 
 
-class Lectures extends Component {
+class Lecture331 extends Component {
     constructor(props) {
         super(props)
         this.prismaZoom = createRef()
@@ -31,7 +31,7 @@ class Lectures extends Component {
     
       render() {
         return (
-          <div className="App">
+          <div>
             
             <header className="App-header">
               <h1>בארזים נפלה שלהבת</h1>
@@ -74,4 +74,4 @@ class Lectures extends Component {
     }
  
       
-export default Lectures;
+export default Lecture331;

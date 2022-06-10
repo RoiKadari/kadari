@@ -1,3 +1,15 @@
+.App-Category  h1 {
+  font-size: 3rem;
+  font-weight:800;
+  line-height: 3rem;
+  color: #043055;
+  background-size: 200% 100%;
+  background-position: 100%;
+  margin-right: 4%;
+  cursor: pointer;
+  text-decoration: none;
+}
+
 .App-header h1 {
     font-size: 3rem;
     font-weight:800;
@@ -95,3 +107,4 @@
 a {
 text-decoration: none;
 }
+
