@@ -4,6 +4,31 @@ import PrismaZoom from 'react-prismazoom';
 import text from '../../text/מדיניות/331.jpg';
 
 
+const keyWords331 = [
+    "שלום", "נחלת אבות", "הקמת מדינת ישראל", "היסטוריה", "עזרא ונחמיה",
+    "ערביי ישראל", "ריבונות", "יהודה ושומרון", "מנחם בגין", "אנואר סאדאת",
+    "משה דיין", "הצופה", "1997" 
+];
+ 
+
+
+let KeyWordsFrontEnd = [];
+for (let i=0; i<keyWords331.length-1; i++) {
+    KeyWordsFrontEnd.push(
+        <span key={i}>
+            <a href={keyWords331[i]}>{keyWords331[i]}</a>
+            &nbsp;&nbsp;|&nbsp;&nbsp;
+        </span>
+    );
+};
+KeyWordsFrontEnd.push(
+    <span key={keyWords331.length-1}>
+        <a href={keyWords331[keyWords331.length-1]}>{keyWords331[keyWords331.length-1]}</a>
+    </span>
+);
+
+
+
 class Lecture331 extends Component {
     constructor(props) {
         super(props)
@@ -60,19 +85,7 @@ class Lecture331 extends Component {
             <div id="catlinks" className="catlinks">
                 <ul>  
                     מילות מפתח: &nbsp;&nbsp;
-                    <a href="שלום">שלום</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-                    <a href="נחלת אבות">נחלת אבות</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-                    <a href="הקמת מדינת ישראל">הקמת מדינת ישראל</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-                    <a href="היסטוריה">היסטוריה</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-                    <a href="עזרא ונחמיה">עזרא ונחמיה</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-                    <a href="ערביי ישראל">ערביי ישראל</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-                    <a href="ריבונות">ריבונות</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-                    <a href="יהודה ושומרון">יהודה ושומרון</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-                    <a href="מנחם בגין">מנחם בגין</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-                    <a href="אנואר סאדאת">אנואר סאדאת</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-                    <a href="משה דיין" >משה דיין</a>&nbsp;&nbsp;|&nbsp;&nbsp; 
-                    <a href="הצופה">הצופה</a>&nbsp;&nbsp;|&nbsp;&nbsp; 
-                    <a href="1977" >1977</a>
+                    {KeyWordsFrontEnd}
                 </ul>
             </div>
             <br/>
@@ -81,5 +94,5 @@ class Lecture331 extends Component {
       }
     }
  
-      
+export { keyWords331 };
 export default Lecture331;

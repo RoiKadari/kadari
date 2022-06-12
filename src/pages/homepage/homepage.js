@@ -1,16 +1,16 @@
 import './homepage.css';
 //import Dailyqoute from './dailyquote/dailyquote'
 
-let i = 1;
-function myLoop() { 
-  setTimeout(function() {
-    console.log('Hello! I am an infinite loop and my job is to make sure that the app wont get unloaded from the Heroku server.');
-    i++;
-    if (i < 10) {
-      myLoop();
-    }
-  }, 10000)
-}
+// let i = 1;
+// function myLoop() { 
+//   setTimeout(function() {
+//     console.log('Hello! I am an infinite loop and my job is to make sure that the app wont get unloaded from the Heroku server.');
+//     i++;
+//     if (i < 10) {
+//       myLoop();
+//     }
+//   }, 10000)
+// }
 
 const Homepage = () => {
     return ( 
@@ -28,7 +28,6 @@ const Homepage = () => {
             <div className="Homepage-body">
                 <div alt="shraga" className='Shraga-img'/>
             </div>
-            { myLoop() }
             {//<Dailyqoute />
             }
         </div>
