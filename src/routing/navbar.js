@@ -1,5 +1,5 @@
 import './navbar.css'
-import React from 'react';
+import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
 import KeyWordsListForSearch from '../lists-for-search/keywordsList';
 import LecturesList from '../lists-for-search/lecturesList';
@@ -13,16 +13,40 @@ const filteredOptions = (query, result) => {
   };
 
 
+const hamburgerIcon =
+    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" viewBox="0 0 24 24" stroke="white" strokeWidth={2}>
+    <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+    </svg>
+
+
 const Navigation = () => {
+    const [isNavExpanded, setIsNavExpanded] = useState(false);
+    if (navigator.userAgentData.mobile === true) { 
     return(
-    <nav className="f6 fw6 tracked">
-        <Link to="/" className="link dim white dib mr3">בית</Link>
-        <Link to="/about" className="link dim white dib mr3">אודות</Link>
-        <Link to="/biography" className="link dim white dib mr3">ביוגרפיה</Link>
-        <Link to="/stories" className="link dim white dib mr3">סיפורים</Link>
-        <Link to="/lectures" className="link dim white dib mr3">מאמרים</Link>      
-    </nav>
-    )
+        <nav className='f6 fw6 tracked'>
+            <span className='hamburger' onClick={() => {setIsNavExpanded(!isNavExpanded)}}>
+                { hamburgerIcon }
+            </span>
+            <div className={isNavExpanded ? "mobile-menu-expanded" : "mobile-menu"}>
+            <ul>
+                <Link to="/" className="link dim d-blue dib mr3">בית</Link>
+                <Link to="/about" className="link dim d-blue dib mr3">אודות</Link>
+                <Link to="/biography" className="link dim d-blue dib mr3">ביוגרפיה</Link>
+                <Link to="/stories" className="link dim d-blue dib mr3">סיפורים</Link>
+                <Link to="/lectures" className="link dim d-blue dib mr3">מאמרים</Link>      
+            </ul>
+            </div>
+        </nav>
+    )} else {
+    return(
+        <nav className='f6 fw6 tracked'>
+            <Link to="/about" className="link dim white dib mr3">אודות</Link>
+            <Link to="/biography" className="link dim white dib mr3">ביוגרפיה</Link>
+            <Link to="/stories" className="link dim white dib mr3">סיפורים</Link>
+            <Link to="/" className="link dim white dib mr3">בית</Link>
+            <Link to="/lectures" className="link dim white dib mr3">מאמרים</Link>      
+        </nav>
+    )};
 };
 
 
