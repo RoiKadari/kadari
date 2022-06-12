@@ -12,6 +12,20 @@ import './homepage.css';
 //   }, 10000)
 // }
 
+const IsMobile = () => {
+    if (navigator.userAgentData.mobile === true) { 
+        Testing.push(
+            "You are using a Mobile"
+        )
+    } else { 
+        Testing.push("You are using a computer")
+    }
+};
+
+let Testing = [];
+IsMobile();
+
+
 const Homepage = () => {
     return ( 
         <div id="homepage">
@@ -20,6 +34,7 @@ const Homepage = () => {
                 <p className="title1">
                     שרגא קדרי
                 </p>
+                {Testing}
                 <p className="title2">
                     הסופר ויצירתו
                 </p>
