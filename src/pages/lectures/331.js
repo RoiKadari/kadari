@@ -4,7 +4,8 @@ import PrismaZoom from 'react-prismazoom';
 import text from '../../text/מדיניות/331.jpg';
 
 
-const keyWords331 = [
+export const keyWords331 =
+[
     "שלום", "נחלת אבות", "הקמת מדינת ישראל", "היסטוריה", "עזרא ונחמיה",
     "ערביי ישראל", "ריבונות", "יהודה ושומרון", "מנחם בגין", "אנואר סאדאת",
     "משה דיין", "הצופה", "1997" 
@@ -94,5 +95,4 @@ class Lecture331 extends Component {
       }
     }
  
-export { keyWords331 };
 export default Lecture331;

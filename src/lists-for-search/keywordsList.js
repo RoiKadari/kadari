@@ -2,7 +2,7 @@ import { keyWords331 } from "../pages/lectures/331";
 
 const allKeyWords = 
 
-     keyWords331 
+    keyWords331 
 
 
 ;
