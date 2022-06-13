@@ -25,10 +25,10 @@ const Navigation = () => {
     if (navigator.userAgentData.mobile === true) { 
     return(
         <nav className='f6 fw6 tracked'>
-            <span onClick={() => {setIsNavExpanded(!isNavExpanded)}} className={isNavExpanded ? "hamburger2" : "hamburger1"}>
+            <span onClick={()=>(setIsNavExpanded(!isNavExpanded))} className={isNavExpanded ? "hamburger2" : "hamburger1"}>
                 { hamburgerIcon }
             </span>
-            <div className={isNavExpanded ? "mobile-menu-expanded" : "mobile-menu"}>
+            <div id="linkdiv" className={isNavExpanded ? "mobile-menu-expanded" : "mobile-menu"} onClick={()=>{setIsNavExpanded(false)}}>
             <ul>
                 <Link to="/" className="link  d-blue">בית</Link><br/>
                 <Link to="/about" className="link  d-blue">אודות</Link><br/>
@@ -42,8 +42,8 @@ const Navigation = () => {
         //Computer Mode
     return(
         <nav className='f6 fw6 tracked'>
-            <Link to="/" className="link dim white dib mr3">בית</Link>
             <Link to="/about" className="link dim white dib mr3">אודות</Link>
+            <Link to="/" className="link dim white dib mr3">בית</Link>
             <Link to="/biography" className="link dim white dib mr3">ביוגרפיה</Link>
             <Link to="/stories" className="link dim white dib mr3">סיפורים</Link>
             <Link to="/lectures" className="link dim white dib mr3">מאמרים</Link>      

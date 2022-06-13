@@ -6,12 +6,12 @@ import Biography from '../pages/biography/biography';
 import Stories from '../pages/stories/stories';
 import Lectures from '../pages/lectures/main/lectures';
 import Mediniyut from '../pages/lectures/main/mediniyut';
-import Lecture331  from '../pages/lectures/331';
+import Lecture331 from '../pages/lectures/331';
 //import NoMatch from '../pages/nomatch/nomatch';
 
 const Routing = () => {
     return(
-        <BrowserRouter>
+        <BrowserRouter> 
             <NavbarAndSearch />
         <Routes> 
             <Route path="/" element={<Homepage />} />

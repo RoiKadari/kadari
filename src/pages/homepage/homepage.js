@@ -4,7 +4,7 @@ import './homepage.css';
 
 
 const Homepage = () => {
-    return ( 
+    return (
         <div id="homepage">
             <header className="Homepage-header BG-image">
             <div className='Icon-image'>
