@@ -7,10 +7,11 @@ const allKeyWords =
 
 ;
 
+
+//remove doubles from different pages
 function onlyUnique(value, index, self) {
     return self.indexOf(value) === index;
 };
-
 const KeyWordsListForSearch = allKeyWords.filter(onlyUnique);
 
 

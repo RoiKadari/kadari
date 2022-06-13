@@ -6,7 +6,7 @@ import Biography from '../pages/biography/biography';
 import Stories from '../pages/stories/stories';
 import Lectures from '../pages/lectures/main/lectures';
 import Mediniyut from '../pages/lectures/main/mediniyut';
-import Lecture331 from '../pages/lectures/331';
+import Text331 from '../pages/lectures/331';
 //import NoMatch from '../pages/nomatch/nomatch';
 
 const Routing = () => {
@@ -20,7 +20,7 @@ const Routing = () => {
             <Route path='stories' element={<Stories />} />
             <Route path='lectures' element={<Lectures />} />
             <Route path='mediniyut' element={<Mediniyut/>} />
-            <Route path='331' element={<Lecture331/>} />
+            <Route path='331' element={<Text331/>} />
             {//<Route path="*" element={<NoMatch />} /> 
             } 
         </Routes>

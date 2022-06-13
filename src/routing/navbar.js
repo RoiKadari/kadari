@@ -42,8 +42,8 @@ const Navigation = () => {
         //Computer Mode
     return(
         <nav className='f6 fw6 tracked'>
-            <Link to="/about" className="link dim white dib mr3">אודות</Link>
             <Link to="/" className="link dim white dib mr3">בית</Link>
+            <Link to="/about" className="link dim white dib mr3">אודות</Link>
             <Link to="/biography" className="link dim white dib mr3">ביוגרפיה</Link>
             <Link to="/stories" className="link dim white dib mr3">סיפורים</Link>
             <Link to="/lectures" className="link dim white dib mr3">מאמרים</Link>      

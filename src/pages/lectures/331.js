@@ -30,7 +30,7 @@ KeyWordsFrontEnd.push(
 
 
 
-class Lecture331 extends Component {
+class Text331 extends Component {
     constructor(props) {
         super(props)
         this.prismaZoom = createRef()
@@ -95,4 +95,4 @@ class Lecture331 extends Component {
       }
     }
  
-export default Lecture331;
+export default Text331;
