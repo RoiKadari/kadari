@@ -18,6 +18,7 @@ const Homepage = () => {
             </header>
             <div className="Homepage-body">
                 <div alt="shraga" className='Shraga-img'/>
+                <div alt="hatima" className='Hatima-img'/>
             </div>
             {//<Dailyqoute />
             }

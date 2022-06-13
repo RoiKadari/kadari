@@ -74,3 +74,17 @@ body {
   margin-top: 5%;
 
 }
+
+.Hatima-img {
+  background-image: url("./hatima.jpg");
+  z-index: 9;
+  width: 50%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: top center;
+  position: absolute;
+  background-size: 30%;
+  margin-left: 25%; margin-right: 25%;
+  margin-top: 26%;
+
+}

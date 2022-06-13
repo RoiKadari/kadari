@@ -29,21 +29,21 @@ const Navigation = () => {
             </span>
             <div className={isNavExpanded ? "mobile-menu-expanded" : "mobile-menu"}>
             <ul>
-                <Link to="/" className="link dim d-blue dib mr3">בית</Link>
-                <Link to="/about" className="link dim d-blue dib mr3">אודות</Link>
-                <Link to="/biography" className="link dim d-blue dib mr3">ביוגרפיה</Link>
-                <Link to="/stories" className="link dim d-blue dib mr3">סיפורים</Link>
-                <Link to="/lectures" className="link dim d-blue dib mr3">מאמרים</Link>      
+                <Link to="/" className="link  d-blue  mr3">בית</Link><br/>
+                <Link to="/about" className="link  d-blue  mr3">אודות</Link><br/>
+                <Link to="/biography" className="link  d-blue  mr3">ביוגרפיה</Link><br/>
+                <Link to="/stories" className="link  d-blue  mr3">סיפורים</Link><br/>
+                <Link to="/lectures" className="link fw6 d-blue  mr3">מאמרים</Link>   
             </ul>
             </div>
         </nav>
     )} else {
     return(
         <nav className='f6 fw6 tracked'>
+            <Link to="/" className="link dim white dib mr3">בית</Link>
             <Link to="/about" className="link dim white dib mr3">אודות</Link>
             <Link to="/biography" className="link dim white dib mr3">ביוגרפיה</Link>
             <Link to="/stories" className="link dim white dib mr3">סיפורים</Link>
-            <Link to="/" className="link dim white dib mr3">בית</Link>
             <Link to="/lectures" className="link dim white dib mr3">מאמרים</Link>      
         </nav>
     )};

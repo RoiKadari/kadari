@@ -160,12 +160,13 @@ input {
 
 .mobile-menu-expanded {
     position: absolute;
+    margin-top: 12%;
     width: 20%;
     height: 40%;
     background-color: white;
-    border-color: 1px solid black;
+    
 }
 
 .d-blue {
-    color: #043055;
+    color: #043055;font-size: x-large;
 };
