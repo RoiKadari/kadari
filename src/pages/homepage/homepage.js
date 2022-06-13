@@ -12,7 +12,8 @@ const Homepage = () => {
                     שרגא קדרי
                 </p>         
                 <p className="title2">
-                    הסופר ויצירתו
+                    הסופר ויצירתו <br/>
+                    (1907 - 1982)
                 </p>
             </div>
             </header>

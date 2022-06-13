@@ -64,20 +64,29 @@ class NavbarAndSearch extends React.Component {
         const { query } = this.state;
         const { tags } = this.state;
         const { lecturesNames } = this.state;
-        
-        if (!query) {
-            return (
-            <div className="navStl bg-d-blue ph3 pv3 pv4-ns ph4-m ph5-l">
-                <form id="frmSearch" method="get">
-                    <input id="txtSearch" type="text" className="mr3" placeholder="חיפוש"
-                    onChange={(e) => {this.setState({ query: e.target.value });}} />
-                </form>
-                <Navigation/> 
-            </div>
-
-        )} else {
+        if (!query) {          
+            if (navigator.userAgentData.mobile === true) {
+                return (
+                    <div className="navStl bg-d-blue ph3 pv3 pv4-ns ph4-m ph5-l large-bar">
+                        <form id="frmSearch" method="get">
+                            <input id="txtSearch" type="text" className="mr3" placeholder="חיפוש"
+                            onChange={(e) => {this.setState({ query: e.target.value });}} />
+                        </form>
+                        <Navigation/> 
+                    </div>
+                )} else {
+                return (
+                <div className="navStl bg-d-blue ph3 pv3 pv4-ns ph4-m ph5-l large-bar">
+                    <form id="frmSearch" method="get">
+                        <input id="txtSearch" type="text" className="mr3" placeholder="חיפוש"
+                        onChange={(e) => {this.setState({ query: e.target.value });}} />
+                    </form>
+                    <Navigation/> 
+                </div>
+                )}
+        } else {
         return (
-           <div className="navStl bg-d-blue ph3 pv3 pv4-ns ph4-m ph5-l">    
+           <div className="navStl bg-d-blue ph3 pv3 pv4-ns ph4-m ph5-l large-bar">    
                 <form id="frmSearch" method="get">
                     <input id="txtSearch" type="text" className="mr3" placeholder="חיפוש"
                     onChange={(e) => {this.setState({ query: e.target.value });}} />
