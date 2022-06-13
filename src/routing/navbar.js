@@ -29,11 +29,11 @@ const Navigation = () => {
             </span>
             <div className={isNavExpanded ? "mobile-menu-expanded" : "mobile-menu"}>
             <ul>
-                <Link to="/" className="link  d-blue  mr3">בית</Link><br/>
-                <Link to="/about" className="link  d-blue  mr3">אודות</Link><br/>
-                <Link to="/biography" className="link  d-blue  mr3">ביוגרפיה</Link><br/>
-                <Link to="/stories" className="link  d-blue  mr3">סיפורים</Link><br/>
-                <Link to="/lectures" className="link fw6 d-blue  mr3">מאמרים</Link>   
+                <Link to="/" className="link  d-blue">בית</Link><br/>
+                <Link to="/about" className="link  d-blue">אודות</Link><br/>
+                <Link to="/biography" className="link  d-blue">ביוגרפיה</Link><br/>
+                <Link to="/stories" className="link  d-blue">סיפורים</Link><br/>
+                <Link to="/lectures" className="link fw6 d-blue">מאמרים</Link>   
             </ul>
             </div>
         </nav>

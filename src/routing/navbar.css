@@ -162,11 +162,23 @@ input {
     position: absolute;
     margin-top: 12%;
     width: 20%;
-    height: 40%;
+    height: 50%;
     background-color: white;
+    border-radius: 25px;
+    text-align: center;
+    line-height: 270%;
+    
     
 }
 
+ul {
+    padding: 0;
+    list-style-type: none;
+    padding-top: 5%;
+}
+
 .d-blue {
-    color: #043055;font-size: x-large;
+    color: #043055;
+    font-size:160%;
+    font-weight: 700;
 };
