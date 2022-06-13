@@ -21,10 +21,11 @@ const hamburgerIcon =
 
 const Navigation = () => {
     const [isNavExpanded, setIsNavExpanded] = useState(false);
+    //Mobile Mode
     if (navigator.userAgentData.mobile === true) { 
     return(
         <nav className='f6 fw6 tracked'>
-            <span className='hamburger' onClick={() => {setIsNavExpanded(!isNavExpanded)}}>
+            <span onClick={() => {setIsNavExpanded(!isNavExpanded)}} className={isNavExpanded ? "hamburger2" : "hamburger1"}>
                 { hamburgerIcon }
             </span>
             <div className={isNavExpanded ? "mobile-menu-expanded" : "mobile-menu"}>
@@ -38,6 +39,7 @@ const Navigation = () => {
             </div>
         </nav>
     )} else {
+        //Computer Mode
     return(
         <nav className='f6 fw6 tracked'>
             <Link to="/" className="link dim white dib mr3">בית</Link>
@@ -64,50 +66,80 @@ class NavbarAndSearch extends React.Component {
         const { query } = this.state;
         const { tags } = this.state;
         const { lecturesNames } = this.state;
-        if (!query) {          
+        //when the search is not triggered
+        if (!query) {
+            //Mobile Mode          
             if (navigator.userAgentData.mobile === true) {
                 return (
-                    <div className="navStl bg-d-blue ph3 pv3 pv4-ns ph4-m ph5-l large-bar">
+                    <div className="bg-d-blue ph3 pv3 pv4-ns ph4-m ph5-l large-bar">
                         <form id="frmSearch" method="get">
-                            <input id="txtSearch" type="text" className="mr3" placeholder="חיפוש"
+                            <input id="txtSearch" type="text" className="large-search" placeholder="  חיפוש"
                             onChange={(e) => {this.setState({ query: e.target.value });}} />
                         </form>
-                        <Navigation/> 
+                        <Navigation /> 
                     </div>
                 )} else {
+                    //Computer Mode
                 return (
-                <div className="navStl bg-d-blue ph3 pv3 pv4-ns ph4-m ph5-l large-bar">
-                    <form id="frmSearch" method="get">
+                <div className="bg-d-blue ph3 pv3 pv4-ns ph4-m ph5-l">
+                    <form id="frmSearch" method="get">    
                         <input id="txtSearch" type="text" className="mr3" placeholder="חיפוש"
                         onChange={(e) => {this.setState({ query: e.target.value });}} />
                     </form>
-                    <Navigation/> 
+                    <Navigation /> 
                 </div>
                 )}
+        //when the search is triggered
         } else {
-        return (
-           <div className="navStl bg-d-blue ph3 pv3 pv4-ns ph4-m ph5-l large-bar">    
-                <form id="frmSearch" method="get">
-                    <input id="txtSearch" type="text" className="mr3" placeholder="חיפוש"
-                    onChange={(e) => {this.setState({ query: e.target.value });}} />
-                    <div className="resultsStl">
-                    <b>מילות מפתח</b><hr/>
-                        {filteredOptions(query, tags).map((result, i) => (              
-                            <a id="results" key={i} href={result}>
-                                {result}<br/>
-                            </a> 
-                        ))}
-                    <br/><b>מאמרים </b><hr/>
-                        {filteredOptions(query, lecturesNames).map((result, i) => (              
-                            <a id="results" key={i} href={result}>
-                                {result}<br/>
-                            </a> 
-                        ))}
-                    </div>
-                </form>
-                <Navigation/>
-            </div>
-        )
+            //Mobile Mode
+            if (navigator.userAgentData.mobile === true) {                 
+            return (
+                <div className="bg-d-blue ph3 pv3 pv4-ns ph4-m ph5-l large-bar">    
+                    <form id="frmSearch" method="get">
+                        <input id="txtSearch" type="text" className="large-search" placeholder="חיפוש"
+                        onChange={(e) => {this.setState({ query: e.target.value });}} />
+                        <div className="large-results">
+                        <b>מילות מפתח</b><hr/>
+                            {filteredOptions(query, tags).map((result, i) => (              
+                                <a id="results" key={i} href={result}>
+                                    {result}<br/>
+                                </a> 
+                            ))}
+                        <br/><b>מאמרים </b><hr/>
+                            {filteredOptions(query, lecturesNames).map((result, i) => (              
+                                <a id="results" key={i} href={result}>
+                                    {result}<br/>
+                                </a> 
+                            ))}
+                        </div>
+                    </form>
+                    <Navigation/>
+                </div>
+            )} else {
+            // Computer Mode
+            return (
+                <div className="bg-d-blue ph3 pv3 pv4-ns ph4-m ph5-l">    
+                    <form id="frmSearch" method="get">
+                        <input id="txtSearch" type="text" className="mr3" placeholder="חיפוש"
+                        onChange={(e) => {this.setState({ query: e.target.value });}} />
+                        <div className="resultsStl">
+                        <b>מילות מפתח</b><hr/>
+                            {filteredOptions(query, tags).map((result, i) => (              
+                                <a id="results" key={i} href={result}>
+                                    {result}<br/>
+                                </a> 
+                            ))}
+                        <br/><b>מאמרים </b><hr/>
+                            {filteredOptions(query, lecturesNames).map((result, i) => (              
+                                <a id="results" key={i} href={result}>
+                                    {result}<br/>
+                                </a> 
+                            ))}
+                        </div>
+                    </form>
+                    <Navigation/>
+                </div>
+            )};
         };
     };
 };
