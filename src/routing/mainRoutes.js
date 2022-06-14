@@ -12,66 +12,58 @@ import TextList from '../lists-for-search/textList';
 //import NoMatch from '../pages/nomatch/nomatch';
 
    
-let keyWordsEncoded = [];
+const keyWordsEncoded = [];
 KeyWordsListForSearch.forEach(i =>
     keyWordsEncoded.push(encodeURIComponent(i))
 
 );
-let titlesEncoded = [];
+const titlesEncoded = [];
 TextList.forEach(i =>
     titlesEncoded.push(encodeURIComponent(i))
 );
 
 
-let page = [];
+const list = ["Homepage", "About", "Cool"];
+const objlist = [];
+list.forEach((element => objlist.push({"page": element})));
+console.log(objlist);
 
-const renderPaths = (paths) => 
-    paths.map((path) =>
-        <Route key={path} path={path} element={<h1>{decodeURIComponent(path)}</h1>} />,
-        paths.map((path) =>   
-            page.push(decodeURIComponent(path))
-        )
-    );
 
-const edit = () => {
-    for (let i=0; i<10; i++) {
-        page[i]="<"+page[i]+" />"
-    }
-};
 
-    
-
-// const renderElements = (elements) =>
-//     elements.map((page) =>
-    
-//         /</
-//         (page)
-//         /
-//         />/
-
+// const renderPages = (page) => 
+//     list.map((page) =>
+//         <Route key={page} path={page} element={<h1>{decodeURIComponent(page)}</h1>} />,
 //     );
 
 
+const pages = [{ route: '/', page: Homepage }, { route: '/about', page: About }];
+
+
+
 const Routing = () => {
+ //useRoutes!!
     
     return(
         
         <BrowserRouter> 
             <NavbarAndSearch />
         <Routes>
-            <Route path="/" element={<Homepage />} />
+            
             <Route path="about" element={<About />} />
             <Route path='biography' element={<Biography />} />
             <Route path='stories' element={<Stories />} />
             <Route path='lectures' element={<Lectures />} />
             <Route path='mediniyut' element={<Mediniyut/>} />
             <Route path='331' element={<Text331/>} />
+    
+    {pages.map(({route, page: Page}) =>
+        <Route key={route} path={route} element={<Page />} />,
+    )}
 
 
-            {renderPaths(keyWordsEncoded)}
-            {renderPaths(titlesEncoded)}
-            {edit()}
-            {console.log(page[0])}
+            {/* {renderPaths(keyWordsEncoded)}
+            {renderPaths(titlesEncoded)} */}
+            
             
 
             {//<Route path="*" element={<NoMatch />} /> 
