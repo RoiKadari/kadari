@@ -1,11 +1,12 @@
 import "./main/lectures.css";
-import React, { Component, createRef } from 'react'
+import React, { Component, createRef } from 'react';
 import PrismaZoom from 'react-prismazoom';
 import text from '../../text/מדיניות/331.jpg';
 
 
 export const keyWords331 =
 [
+  "Homepage" ,
     "שלום", "נחלת אבות", "הקמת מדינת ישראל", "היסטוריה", "עזרא ונחמיה",
     "ערביי ישראל", "ריבונות", "יהודה ושומרון", "מנחם בגין", "אנואר סאדאת",
     "משה דיין", "הצופה", "1997" 
@@ -94,5 +95,5 @@ class Text331 extends Component {
         )
       }
     }
- 
+
 export default Text331;

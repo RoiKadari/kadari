@@ -1,6 +1,6 @@
 import { keyWords331 } from "../pages/lectures/331";
 
-const allKeyWords = 
+const allKeyWords =
 
     keyWords331 
 
