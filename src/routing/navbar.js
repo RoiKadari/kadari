@@ -1,7 +1,7 @@
 import './navbar.css'
 import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
-import KeyWordsListForSearch from '../lists-for-search/keywordsList';
+import AllKeyWords from '../lists-for-search/keywordsList';
 import TextList from '../lists-for-search/textList';
 
 
@@ -58,7 +58,7 @@ class NavbarAndSearch extends React.Component {
         super(props)
         this.state = {
             query: (""),
-            tags: KeyWordsListForSearch,
+            tags: AllKeyWords,
             lecturesNames: TextList
         };
     };

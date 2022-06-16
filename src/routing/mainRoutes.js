@@ -1,52 +1,45 @@
+import navComponents from './CompsNav';
 import React from 'react';
+import { fixedKwEncoded } from '../lists-for-search/keywordsList';
+import keywordsComponents from './CompsKeywords';
+import { keywordsCompsList } from '../lists-for-search/keywordsList';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import NavbarAndSearch from './navbar';
-import Components from './components';
-import Text331 from '../pages/lectures/331';
-import KeyWordsListForSearch from '../lists-for-search/keywordsList';
-import TextList from '../lists-for-search/textList';
 import Homepage from '../pages/homepage/homepage';
+import Text331 from '../pages/lectures/331';
+
 //import NoMatch from '../pages/nomatch/nomatch';
 
-   
-const keyWordsEncoded = [];
-KeyWordsListForSearch.forEach(i =>
 
-    keyWordsEncoded.push(encodeURIComponent(i))
-);
-const titlesEncoded = [];
-TextList.forEach(i =>
-    titlesEncoded.push(encodeURIComponent(i))
-);
+// const titlesEncoded = [];
+// TextList.forEach(i =>
+//     titlesEncoded.push(encodeURIComponent(i))
+// );
 
 
-let list = Object.keys(Components);
-let pushedRoutes = [];
-const allRoutes = () => {
-    for (let i=0; i<list.length; i++) {
-        pushedRoutes.push(<Route key={list[i]} path={list[i]} element={React.createElement(Components[list[i]])} />)
-        pushedRoutes.push(<Route key={keyWordsEncoded[i]} path={keyWordsEncoded[i]} element={React.createElement(Components[list[i]])} />)
-       
-    }
-    return pushedRoutes;
+function list(obj) {
+    return Object.keys(obj);
+};
+const navCompsList = list(navComponents);
+
+
+const pushedRoutes = [];
+for (let i=0; i<navCompsList.length; i++) {
+    pushedRoutes.push(<Route key={navCompsList[i]} path={navCompsList[i]} element={React.createElement(navComponents[navCompsList[i]])} />)
+}
+for (let i=0; i<keywordsCompsList.length; i++) {
+    pushedRoutes.push(<Route key={fixedKwEncoded[i]} path={fixedKwEncoded[i]} element={React.createElement(keywordsComponents[keywordsCompsList[i]])} />)    
 }
 
 
-
-
-
-
-const Routing = () => {
-    
+const Routing = () => {    
     return(
-        
         <BrowserRouter> 
             <NavbarAndSearch />
         <Routes>
             <Route path='/' element={<Homepage/>} />
             <Route path='331' element={<Text331/>} />
-            {allRoutes()}
-            
+            {pushedRoutes}
 
             {//<Route path="*" element={<NoMatch />} /> 
             } 
@@ -54,17 +47,6 @@ const Routing = () => {
         </BrowserRouter>
     )
 };
-
-
-
-
-// let wordized = [];
-// keyWordsEncoded.forEach(i =>
-//     wordized.push(decodeURIComponent(i)),
-
-// );
-// console.log(wordized, keyWordsEncoded);
-
 
 
 export default Routing;

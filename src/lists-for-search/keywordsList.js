@@ -1,18 +1,22 @@
-import { keyWords331 } from "../pages/lectures/331";
-
-const allKeyWords =
-
-    keyWords331 
+import keywordsComponents from "../routing/CompsKeywords";
 
 
-;
-
-
-//remove doubles from different pages
-function onlyUnique(value, index, self) {
-    return self.indexOf(value) === index;
+function list(obj) {
+    return Object.keys(obj);
 };
-const KeyWordsListForSearch = allKeyWords.filter(onlyUnique);
+export const keywordsCompsList = list(keywordsComponents);
 
 
-export default KeyWordsListForSearch;
+const keyWordsEncoded = [];
+keywordsCompsList.forEach(i =>
+    keyWordsEncoded.push(encodeURIComponent(i)));
+export const fixedKwEncoded = keyWordsEncoded.map(item => item.replace('_', '%20'))
+
+
+const AllKeyWords = [];
+fixedKwEncoded.forEach(i =>
+    AllKeyWords.push(decodeURIComponent(i)),
+);
+
+
+export default AllKeyWords;
