@@ -1,12 +1,15 @@
 import navComponents from './CompsNav';
 import React from 'react';
+import { keywordsCompsList } from '../lists-for-search/keywordsList';
 import { fixedKwEncoded } from '../lists-for-search/keywordsList';
 import keywordsComponents from './CompsKeywords';
-import { keywordsCompsList } from '../lists-for-search/keywordsList';
+import { textCompsList } from '../lists-for-search/textList';
+import { fixedTxtEncoded } from '../lists-for-search/textList';
+import textComponents from './CompsText';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import NavbarAndSearch from './navbar';
 import Homepage from '../pages/homepage/homepage';
-import Text331 from '../pages/lectures/331';
+
 
 //import NoMatch from '../pages/nomatch/nomatch';
 
@@ -30,6 +33,9 @@ for (let i=0; i<navCompsList.length; i++) {
 for (let i=0; i<keywordsCompsList.length; i++) {
     pushedRoutes.push(<Route key={fixedKwEncoded[i]} path={fixedKwEncoded[i]} element={React.createElement(keywordsComponents[keywordsCompsList[i]])} />)    
 }
+for (let i=0; i<textCompsList.length; i++) {
+    pushedRoutes.push(<Route key={fixedTxtEncoded[i]} path={fixedTxtEncoded[i]} element={React.createElement(textComponents[textCompsList[i]])} />)    
+}
 
 
 const Routing = () => {    
@@ -38,8 +44,8 @@ const Routing = () => {
             <NavbarAndSearch />
         <Routes>
             <Route path='/' element={<Homepage/>} />
-            <Route path='331' element={<Text331/>} />
             {pushedRoutes}
+            <Route path='/cool' element={React.createElement(window.שוב)} />
 
             {//<Route path="*" element={<NoMatch />} /> 
             } 

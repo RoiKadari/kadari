@@ -31,7 +31,7 @@ KeyWordsFrontEnd.push(
 
 
 
-class Text331 extends Component {
+class בארזים_נפלה_שלהבת extends Component {
     constructor(props) {
         super(props)
         this.prismaZoom = createRef()
@@ -96,4 +96,4 @@ class Text331 extends Component {
       }
     }
 
-export default Text331;
+export default בארזים_נפלה_שלהבת;

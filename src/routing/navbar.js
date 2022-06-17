@@ -2,7 +2,7 @@ import './navbar.css'
 import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
 import AllKeyWords from '../lists-for-search/keywordsList';
-import TextList from '../lists-for-search/textList';
+import AllText from '../lists-for-search/textList';
 
 
 const filteredOptions = (query, result) => {
@@ -59,7 +59,7 @@ class NavbarAndSearch extends React.Component {
         this.state = {
             query: (""),
             tags: AllKeyWords,
-            lecturesNames: TextList
+            lecturesNames: AllText
         };
     };
     render() {

@@ -1,7 +1,7 @@
-import { שלום , נחלת_אבות} from '../pages/keywordsPages';
+import { היסטוריה, הקמת_מדינת_ישראל, עזרא_ונחמיה, נחלת_אבות, שלום } from '../pages/keywordsPages';
 
 const keywordsComponents = {
-    שלום, נחלת_אבות
+     היסטוריה, הקמת_מדינת_ישראל, עזרא_ונחמיה, נחלת_אבות, שלום 
 
 
 };
