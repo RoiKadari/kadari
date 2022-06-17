@@ -9,6 +9,7 @@ import textComponents from './CompsText';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import NavbarAndSearch from './navbar';
 import Homepage from '../pages/homepage/homepage';
+import { keyWords331 } from '../pages/lectures/331';
 
 
 //import NoMatch from '../pages/nomatch/nomatch';
@@ -26,12 +27,13 @@ function list(obj) {
 const navCompsList = list(navComponents);
 
 
+
 const pushedRoutes = [];
 for (let i=0; i<navCompsList.length; i++) {
     pushedRoutes.push(<Route key={navCompsList[i]} path={navCompsList[i]} element={React.createElement(navComponents[navCompsList[i]])} />)
 }
 for (let i=0; i<keywordsCompsList.length; i++) {
-    pushedRoutes.push(<Route key={fixedKwEncoded[i]} path={fixedKwEncoded[i]} element={React.createElement(keywordsComponents[keywordsCompsList[i]])} />)    
+    pushedRoutes.push(<Route key={fixedKwEncoded[i]} path={fixedKwEncoded[i]} element={React.createElement(keywordsComponents[keyWords331[i]])} />)    
 }
 for (let i=0; i<textCompsList.length; i++) {
     pushedRoutes.push(<Route key={fixedTxtEncoded[i]} path={fixedTxtEncoded[i]} element={React.createElement(textComponents[textCompsList[i]])} />)    
@@ -45,8 +47,6 @@ const Routing = () => {
         <Routes>
             <Route path='/' element={<Homepage/>} />
             {pushedRoutes}
-            <Route path='/cool' element={React.createElement(window.שוב)} />
-
             {//<Route path="*" element={<NoMatch />} /> 
             } 
         </Routes>
