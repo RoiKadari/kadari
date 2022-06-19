@@ -1,7 +1,10 @@
 import  בארזים_נפלה_שלהבת  from '../pages/lectures/331';
+import אמת_ואמונה from '../pages/lectures/6';
 
 const textComponents = {
-    בארזים_נפלה_שלהבת
+    אמת_ואמונה ,
+    בארזים_נפלה_שלהבת ,
+
 
 
 };

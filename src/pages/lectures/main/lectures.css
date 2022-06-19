@@ -71,7 +71,7 @@
     position: relative;
     overflow: scroll;
     direction:ltr;
-    height: 100vmax;
+    height: 90vmax;
   }
   
   .App-zoom {
@@ -84,7 +84,7 @@
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: top right;
-    height: 110vmax;
+    height: 100vmax;
   }
   
   .App-zoomLabel {

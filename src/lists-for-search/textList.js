@@ -7,6 +7,7 @@ function list(obj) {
 export const textCompsList = list(textComponents);
 
 
+
 const textEncoded = [];
 textCompsList.forEach(i =>
     textEncoded.push(encodeURIComponent(i)));
