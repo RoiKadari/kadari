@@ -1,6 +1,6 @@
 .App-Category  h1 {
   font-size: 3rem;
-  font-weight:800;
+  font-weight:700;
   line-height: 3rem;
   color: #043055;
   background-size: 200% 100%;
@@ -71,7 +71,7 @@
     position: relative;
     overflow: scroll;
     direction:ltr;
-    height: 90vmax;
+    height: 100vmax;
   }
   
   .App-zoom {

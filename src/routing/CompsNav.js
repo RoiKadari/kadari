@@ -4,6 +4,7 @@ import Biography from '../pages/biography/biography';
 import Stories from '../pages/stories/stories';
 import Lectures from '../pages/lectures/main/lectures';
 import Emunah from "../pages/lectures/main/emunah";
+import Chinuch from "../pages/lectures/main/chinuch";
 import Mediniyut from '../pages/lectures/main/mediniyut';
 
 const navComponents = {
@@ -13,6 +14,7 @@ const navComponents = {
     Stories,
     Lectures,
     Emunah,
+    Chinuch,
     Mediniyut,
     
 };

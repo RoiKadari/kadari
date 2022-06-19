@@ -105,7 +105,7 @@ class NavbarAndSearch extends React.Component {
                                     {result}<br/>
                                 </a> 
                             ))}
-                        <br/><b>מאמרים </b><hr/>
+                        <br/><b>מאמרים וסיפורים</b><hr/>
                             {filteredOptions(query, lecturesNames).map((result, i) => (              
                                 <a id="results" key={i} href={result}>
                                     {result}<br/>
@@ -129,7 +129,7 @@ class NavbarAndSearch extends React.Component {
                                     {result}<br/>
                                 </a> 
                             ))}
-                        <br/><b>מאמרים </b><hr/>
+                        <br/><b>מאמרים וסיפורים</b><hr/>
                             {filteredOptions(query, lecturesNames).map((result, i) => (              
                                 <a id="results" key={i} href={result}>
                                     {result}<br/>
