@@ -1,7 +1,7 @@
 import "./lectures.css";
-import pray from "./s.jpg";
-import kid from "./ed.jpg"
-import flag from "./flg.jpg"
+import pray from "./images/pry.jpg";
+import kid from "./images/edu.jpg"
+import flag from "./images/flg.jpg"
 
 
 const Lectures = () => {

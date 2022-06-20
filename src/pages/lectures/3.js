@@ -65,7 +65,7 @@ class כל_נדרי_והוראת_התנך extends Component {
 
             <section className="App-wrapper">
               <PrismaZoom className="App-zoom" onZoomChange={this.onZoomChange} maxZoom={8} ref={this.prismaZoom}>
-                <div className="App-image" style={{ backgroundImage: `url(${text})` }}></div>
+                <img src={text} alt="" className="App-image"/>
               </PrismaZoom> </section>
               <footer className="App-footer">
                 <div className="App-indicator">

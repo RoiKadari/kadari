@@ -108,14 +108,11 @@
   }
   
   .App-wrapper {
-    display: flex;
     align-items: center;
     justify-content: center;
     margin-right: 5%; margin-left: 5%;
     position: relative;
     overflow: scroll;
-    direction:ltr;
-    height: 100vmax;
   }
   
   .App-zoom {
@@ -125,10 +122,11 @@
   }
   
   .App-image {
-    background-size: 100%;
+    /* background-size: 100%;
     background-repeat: no-repeat;
-    background-position: top right;
-    height: 100vmax;
+    background-position: center right; */
+    width: 100%;
+    height: 100%;
   }
   
   .App-zoomLabel {
