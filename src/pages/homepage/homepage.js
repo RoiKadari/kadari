@@ -1,9 +1,10 @@
 import './homepage.css';
 //import Dailyqoute from './dailyquote/dailyquote'
-
+import bg from "./bg.jpg"
 
 
 const Homepage = () => {
+
     return (
         <div id="homepage">
             <header className="Homepage-header BG-image">
@@ -19,9 +20,10 @@ const Homepage = () => {
                 </p>
             </div>
             </header>
-            <div className="Homepage-body">
+            <div>
                 <div alt="shraga" className='Shraga-img'/>
                 <div alt="hatima" className='Hatima-img'/>
+                <img src={bg} alt="" className="Homepage-body"/>
             </div>
             {//<Dailyqoute />
             }

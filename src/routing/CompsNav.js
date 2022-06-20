@@ -7,9 +7,6 @@ import Emunah from "../pages/lectures/main/emunah";
 import Chinuch from "../pages/lectures/main/chinuch";
 import Mediniyut from '../pages/lectures/main/mediniyut';
 
-function ComponentBuilder(array){
-    return (array.reduce((list, i) => ({...list, [i]: window[i]}), {}))
-}
 
 const navComponents = {
     Homepage,
