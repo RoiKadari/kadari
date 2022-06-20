@@ -8,10 +8,13 @@ export const textCompsList = list(textComponents);
 
 
 
-const textEncoded = [];
+let textEncoded = [];
 textCompsList.forEach(i =>
-    textEncoded.push(encodeURIComponent(i)));
-export const fixedTxtEncoded = textEncoded.map(item => item.replace(/_/g, '%20'))
+    textEncoded.push(encodeURIComponent(i)),
+);
+
+const fixedTxtEncdQts = textEncoded.map(item => item.replace(/ii/g, '%22'));
+export const fixedTxtEncoded = fixedTxtEncdQts.map(item => item.replace(/_/g, '%20'));
 
 
 const AllText = [];

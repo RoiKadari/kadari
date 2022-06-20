@@ -39,7 +39,6 @@ for (let i=0; i<textCompsList.length; i++) {
     pushedRoutes.push(<Route key={fixedTxtEncoded[i]} path={fixedTxtEncoded[i]} element={React.createElement(textComponents[textCompsList[i]])} />)    
 }
 
-console.log(textCompsList, textComponents, fixedTxtEncoded)
 const Routing = () => {    
     return(
         <BrowserRouter> 

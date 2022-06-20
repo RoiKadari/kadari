@@ -1,6 +1,6 @@
 import "./lectures.css";
 
-let titles = ["כל נדרי והוראת התנך"];
+let titles = ['כל נדרי והוראת התנ"ך'];
 
 let divvedTitles = [];
 for (let i=0; i<titles.length; i++) {

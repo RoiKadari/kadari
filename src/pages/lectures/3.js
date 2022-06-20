@@ -29,7 +29,7 @@ KeyWordsFrontEnd.push(
 
 
 
-class כל_נדרי_והוראת_התנך extends Component {
+class כל_נדרי_והוראת_התנiiך extends Component {
     constructor(props) {
         super(props)
         this.prismaZoom = createRef()
@@ -94,4 +94,4 @@ class כל_נדרי_והוראת_התנך extends Component {
       }
     }
 
-export default כל_נדרי_והוראת_התנך;
+export default כל_נדרי_והוראת_התנiiך;
