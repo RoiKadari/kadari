@@ -82,12 +82,12 @@ class כל_נדרי_והוראת_התנך extends Component {
                   </button>
                 </div>
               </footer>
-            <div id="catlinks" className="catlinks">
+            {/* <div id="catlinks" className="catlinks">
                 <ul>  
                     מילות מפתח: &nbsp;&nbsp;
                     {KeyWordsFrontEnd}
                 </ul>
-            </div>
+            </div> */}
             <br/>
           </div>
         )

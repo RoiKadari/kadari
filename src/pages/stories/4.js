@@ -59,7 +59,7 @@ class דרכו_של_אב_ודרכה_של_אם extends Component {
           <div>
             
             <header className="App-header">
-              <h1>דרכו של אב ודרכה של אם</h1>
+              <h1>דרכו של אב ודרכה של אם. חלק א'</h1>
               <h2>הצופה 27.10.39</h2>
             </header>
 
@@ -82,12 +82,12 @@ class דרכו_של_אב_ודרכה_של_אם extends Component {
                   </button>
                 </div>
               </footer>
-            <div id="catlinks" className="catlinks">
+            {/* <div id="catlinks" className="catlinks">
                 <ul>  
                     מילות מפתח: &nbsp;&nbsp;
                     {KeyWordsFrontEnd}
                 </ul>
-            </div>
+            </div> */}
             <br/>
           </div>
         )
