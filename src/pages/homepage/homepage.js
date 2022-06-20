@@ -1,6 +1,8 @@
 import './homepage.css';
 //import Dailyqoute from './dailyquote/dailyquote'
-import bg from "./bg.jpg"
+import bg from "./bg.jpg";
+import shraga from "./shraga.jpg";
+import hatima from "./hatima.jpg";
 
 
 const Homepage = () => {
@@ -21,8 +23,8 @@ const Homepage = () => {
             </div>
             </header>
             <div>
-                <div alt="shraga" className='Shraga-img'/>
-                <div alt="hatima" className='Hatima-img'/>
+                <img src={shraga} alt="" className='Shraga-img'/>
+                <img src={hatima} alt="" className='Hatima-img'/>
                 <img src={bg} alt="" className="Homepage-body"/>
             </div>
             {//<Dailyqoute />

@@ -65,31 +65,21 @@ body {
 }
 
 .Shraga-img {
-  background-image: url("./shraga.jpg");
   z-index: 9;
-  width: 50%;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-position: top center;
+  width: 20%;
+  height: 40%;
   position: absolute;
-  background-size: 30%;
-  margin-left: 25%; margin-right: 25%;
+  margin-left: 40%; margin-right: 40%;
   margin-top: 5%;
-
 }
 
 .Hatima-img {
-  background-image: url("./hatima.jpg");
   z-index: 9;
-  width: 50%;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-position: top center;
+  width: 20%;
+  height: 10%;
   position: absolute;
-  background-size: 30%;
-  margin-left: 25%; margin-right: 25%;
-  margin-top: 26%;
-
+  margin-left: 40%; margin-right: 40%;
+  margin-top: 35%;
 }
 
 
