@@ -1,0 +1,53 @@
+.bioTitle {
+    padding-right: 5%;
+    padding-top: 2%;
+    font-size: 1.2cm;
+    font-weight: 700;
+    line-height: 0;
+}
+
+#biography {
+    font-size: 0.6cm;
+    margin-right: 5%;
+    position: absolute;
+}
+
+
+#abs {
+    position: absolute;
+    width: 770px;
+}
+
+#imgnsub {
+    position: absolute;
+    margin-right: 810px;
+    margin-top: 30px;
+    width: 430px; 
+}
+
+
+#imgnsub2 {
+    position: absolute;
+    padding: 3%;
+    width: 430px;
+    margin-top: 380px; 
+
+}
+
+#btcnst {
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+#gly {
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+#subtext {
+    display: inline-block;
+    font-size: medium;
+    font-weight: bold;
+    
+}
+
