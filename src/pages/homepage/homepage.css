@@ -1,9 +1,10 @@
 
 body {
   position: relative;
-  margin: 0;
-  
-  
+}
+footer {
+  width: 100%;
+  height: 5%;
 }
 
 
@@ -67,7 +68,7 @@ body {
 .Shraga-img {
   z-index: 9;
   width: 20%;
-  height: 40%;
+  height: 38%;
   position: absolute;
   margin-left: 40%; margin-right: 40%;
   margin-top: 5%;
@@ -79,7 +80,10 @@ body {
   height: 10%;
   position: absolute;
   margin-left: 40%; margin-right: 40%;
-  margin-top: 35%;
+  margin-top: 34%;
 }
 
-
+footer {
+  position: absolute;
+  margin-bottom: 0px;
+}

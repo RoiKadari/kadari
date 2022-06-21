@@ -6,7 +6,7 @@ let divvedTitles = [];
 for (let i=0; i<titles.length; i++) {
   divvedTitles.push(
     <div key={i}>
-      <header className="App-Category"><a href={titles[i]}><h1>{titles[i]}</h1></a></header> 
+      <header><h1><a href={titles[i]} className="App-Category">{titles[i]}</a></h1></header> 
     </div>
   );
 };

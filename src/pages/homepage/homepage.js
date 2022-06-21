@@ -29,6 +29,7 @@ const Homepage = () => {
             </div>
             {//<Dailyqoute />
             }
+            <footer className="bg-d-blue"></footer>
         </div>
     )
 };

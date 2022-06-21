@@ -11,7 +11,8 @@
 }
 
 .card {
-  width: 25%;  display: inline-block;
+  display: inline-block;
+  width: 25%;  
   margin: 2%;
   padding: 1%;
   font-size: 250%;
@@ -20,27 +21,35 @@
   border-radius: 3%;
   border: #043055;
   border-style: solid;
+  cursor: pointer;
+  transform: none;
 }
-.divImg :hover {
+.card :hover {
   transform: none;
 }
 
 .lecImg {
   width: 100%;
   height: 100%;
-  transform: none;
 }
 
 .subject{
   width: 100%;
   text-align: center;
   background-color: #ffffff;
-  transform: none;
+  font-size: 3rem;
+  font-weight:700;
+  line-height: 3rem;
+  color: #043055;
+  background-size: 200% 100%;
+  background-position: 100%;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 
 
-.App-Category  h1 {
+.App-Category {
   font-size: 3rem;
   font-weight:700;
   line-height: 3rem;
