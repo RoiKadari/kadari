@@ -18,6 +18,13 @@
     width: 770px;
 }
 
+#abs2 {
+    position: absolute;
+    width: 770px;
+    margin-right: 480px;
+    margin-top: 380px;
+}
+
 #imgnsub {
     position: absolute;
     margin-right: 810px;
@@ -26,28 +33,39 @@
     text-align: center;
 }
 
-
 #imgnsub2 {
     position: absolute;
     padding: 3%;
     width: 430px;
     margin-top: 380px; 
-
+    text-align: center;
 }
 
-#btcnst {
+#imgnsub3 {
+    position: absolute;
+    margin-right: 700px;
+    margin-top: 720px;
+    width: 430px; 
+    text-align: center;
+}
+
+#imgnsubLast {
+    position: absolute;
+    margin-right: 400px;
+    margin-top: 1200px;
+    width: 430px; 
+    text-align: center;
+}
+
+
+#btcnst, #gly, #itn, #oz {
     width: 100%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
 
-#gly {
-    width: 100%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
-}
 
 #subtext {
     display: inline-block;
     font-size: medium;
     font-weight: bold;
 }
-
