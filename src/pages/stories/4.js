@@ -59,8 +59,11 @@ class דרכו_של_אב_ודרכה_של_אם extends Component {
           <div>
             
             <header className="App-header">
-              <h1>דרכו של אב ודרכה של אם. חלק א'</h1>
-              <h2>הצופה 27.10.39</h2>
+              <h1>דרכו של אב ודרכה של אם</h1>
+              <h2><b>חלק א'</b></h2>
+              <h2>הצופה&nbsp;&nbsp;|&nbsp;
+              י"ד בחשוון ת"ש&nbsp;&nbsp;|&nbsp;
+              27.10.39</h2>
             </header>
 
             <section className="App-wrapper">

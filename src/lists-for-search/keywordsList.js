@@ -7,7 +7,6 @@ function list(obj) {
 };
 export const keywordsCompsList = list(keywordsComponents);
 
-
 const keyWordsEncoded = [];
 keyWords331.forEach(i =>
     keyWordsEncoded.push(encodeURIComponent(i)));

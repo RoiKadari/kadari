@@ -60,7 +60,9 @@ class כל_נדרי_והוראת_התנiiך extends Component {
             
             <header className="App-header">
               <h1>כל נדרי והוראת התנ"ך</h1>
-              <h2>זמנים 06.10.54</h2>
+              <h2>זמנים&nbsp;&nbsp;|&nbsp;
+              ט' בתשרי (ערב יום כיפור) תשט"ו&nbsp;&nbsp;|&nbsp;
+              06.10.54</h2>
             </header>
 
             <section className="App-wrapper">

@@ -60,7 +60,9 @@ class אמת_ואמונה extends Component {
             
             <header className="App-header">
               <h1>אמת ואמונה</h1>
-              <h2>כתובים 16.03.32</h2>
+              <h2>כתובים&nbsp;&nbsp;|&nbsp;
+              ח' באדר ב', תרצ"ב&nbsp;&nbsp;|&nbsp;
+              16.03.32</h2>
             </header>
 
             <section className="App-wrapper">

@@ -63,7 +63,9 @@ class בארזים_נפלה_שלהבת extends Component {
             
             <header className="App-header">
               <h1>בארזים נפלה שלהבת</h1>
-              <h2>הצופה 13.01.77</h2>
+              <h2>הצופה&nbsp;&nbsp;|&nbsp;
+              כ"ג בטבת תשל"ז&nbsp;&nbsp;|&nbsp;
+              13.01.77</h2>
             </header>
 
             <section className="App-wrapper">
