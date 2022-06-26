@@ -24,6 +24,17 @@
     margin-right: 480px;
     margin-top: 380px;
 }
+#abs3 {
+    position: absolute;
+    width: 670px;
+    margin-top: 740px;
+}
+#abs4 {
+    position: absolute;
+    margin-right: 650px;
+    width: 600px;
+    margin-top: 1100px;
+}
 
 #imgnsub {
     position: absolute;
@@ -51,8 +62,8 @@
 
 #imgnsubLast {
     position: absolute;
-    margin-right: 400px;
-    margin-top: 1200px;
+    margin-right: 700px;
+    margin-top: 1250px;
     width: 430px; 
     text-align: center;
 }
@@ -68,4 +79,9 @@
     display: inline-block;
     font-size: medium;
     font-weight: bold;
+}
+
+#abs3 li {
+    list-style-type: disc;
+    padding-right: 0.5cm ;
 }
