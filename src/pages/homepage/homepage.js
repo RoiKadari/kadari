@@ -18,7 +18,7 @@ const Homepage = () => {
                     הסופר ויצירתו
                 </p>
                 <p className="title3">
-                תרס"ז - תשמ"ב
+                תרס"ז - תשמ"ב &nbsp;&nbsp;
                 1982 - 1907
                 </p>
             </div>
