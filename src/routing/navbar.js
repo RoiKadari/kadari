@@ -34,7 +34,8 @@ const Navigation = () => {
                 <Link to="/about" className="link  d-blue">אודות</Link><br/>
                 <Link to="/biography" className="link  d-blue">ביוגרפיה</Link><br/>
                 <Link to="/stories" className="link  d-blue">סיפורים</Link><br/>
-                <Link to="/lectures" className="link fw6 d-blue">מאמרים</Link>   
+                <Link to="/lectures" className="link fw6 d-blue">מאמרים</Link><br/> 
+                <Link to="/" className="link  d-blue">תמונות</Link>
             </ul>
             </div>
         </nav>
@@ -46,7 +47,8 @@ const Navigation = () => {
             <Link to="/about" className="link dim white dib mr3">אודות</Link>
             <Link to="/biography" className="link dim white dib mr3">ביוגרפיה</Link>
             <Link to="/stories" className="link dim white dib mr3">סיפורים</Link>
-            <Link to="/lectures" className="link dim white dib mr3">מאמרים</Link>      
+            <Link to="/lectures" className="link dim white dib mr3">מאמרים</Link>
+            <Link to="/" className="link dim white dib mr3">תמונות</Link>      
         </nav>
     )};
 };
