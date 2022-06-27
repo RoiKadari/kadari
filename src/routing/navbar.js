@@ -35,7 +35,7 @@ const Navigation = () => {
                 <Link to="/biography" className="link  d-blue">ביוגרפיה</Link><br/>
                 <Link to="/stories" className="link  d-blue">סיפורים</Link><br/>
                 <Link to="/lectures" className="link fw6 d-blue">מאמרים</Link><br/> 
-                <Link to="/" className="link  d-blue">תמונות</Link>
+                <Link to="/pictures" className="link  d-blue">תמונות</Link>
             </ul>
             </div>
         </nav>
