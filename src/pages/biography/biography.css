@@ -9,61 +9,63 @@
 #biography {
     font-size: 0.6cm;
     margin-right: 5%;
-    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
+#biography-mobile {
+    font-size: 0.6cm;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#abs-mobile {
+    font-size:xx-large;
+    padding-right: 40px;
+    padding-left: 40px;
+}
 
 #abs {
-    position: absolute;
     width: 770px;
 }
 
 #abs2 {
-    position: absolute;
     width: 770px;
-    margin-right: 480px;
-    margin-top: 380px;
 }
 #abs3 {
-    position: absolute;
     width: 670px;
-    margin-top: 740px;
 }
 #abs4 {
-    position: absolute;
-    margin-right: 650px;
     width: 600px;
-    margin-top: 1100px;
 }
 
 #imgnsub {
-    position: absolute;
-    margin-right: 810px;
     margin-top: 30px;
     width: 430px; 
     text-align: center;
 }
 
+#imgnsub-mobile {
+    margin-top: 30px;
+    width: 70%; 
+    text-align: center;
+    font-size: x-large;
+}
+
 #imgnsub2 {
-    position: absolute;
     padding: 3%;
     width: 430px;
-    margin-top: 380px; 
     text-align: center;
 }
 
 #imgnsub3 {
-    position: absolute;
-    margin-right: 700px;
-    margin-top: 720px;
     width: 430px; 
     text-align: center;
 }
 
 #imgnsubLast {
-    position: absolute;
-    margin-right: 700px;
-    margin-top: 1250px;
     width: 430px; 
     text-align: center;
 }
@@ -78,6 +80,12 @@
 #subtext {
     display: inline-block;
     font-size: medium;
+    font-weight: bold;
+}
+
+#subtext-mobile {
+    display: inline-block;
+    font-size:x-large;
     font-weight: bold;
 }
 
