@@ -14,8 +14,30 @@ import book12 from "./books/ירושלים.jpeg";
 import book13 from "./books/ולירושלים.jpeg";
 
 const Pictures = () => {
+    //Mobile Mode
+    if (navigator.userAgentData.mobile === true) { 
+    return(
+        <div className="books-mobile">
+        <img src={book1} alt=""/>
+        <img src={book2} alt=""/>
+        <img src={book3} alt=""/>
+        <img src={book4} alt=""/>
+        <img src={book5} alt=""/>
+        <img src={book6} alt=""/>
+        <img src={book7} alt=""/>
+        <img src={book8} alt=""/>
+        <img src={book9} alt=""/>
+        <img src={book10} alt=""/>
+        <img src={book11} alt=""/>
+        <img src={book12} alt=""/>
+        <img src={book13} alt=""/>
+    </div>
+    )} else {
+
+    //Computer Mode
+
     return (
-        <div className="books">
+        <div className="books-computer">
             <img src={book1} alt=""/>
             <img src={book2} alt=""/>
             <img src={book3} alt=""/>
@@ -30,7 +52,7 @@ const Pictures = () => {
             <img src={book12} alt=""/>
             <img src={book13} alt=""/>
         </div>
-    )
+    )}
 };
 
 

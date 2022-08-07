@@ -1,9 +1,24 @@
-.books {
-    text-align: center;
+
+.books-computer {
     padding-top: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.books img {
-    width:20%;
-    padding: 0.5%;
+.books-mobile {
+    padding-top: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+
+.books-computer img {
+    width:300px;
+    padding: 5px;
+}
+
+.books-mobile img {
+    width: 600px;
+    padding: 5px;
 }
