@@ -1,6 +1,7 @@
 
 
 import { catTitles } from "../pages/keywordsPages";
+import { keyWords13 } from "../pages/lectures/13";
 import { keyWords331 } from "../pages/lectures/331";
 
 function ComponentBuilder(array){
@@ -8,7 +9,7 @@ function ComponentBuilder(array){
 }
 
 const keywordsComponents =
-ComponentBuilder(keyWords331);
+ComponentBuilder(keyWords13 & keyWords331);
 
 
 

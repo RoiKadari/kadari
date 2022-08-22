@@ -9,6 +9,7 @@ import textComponents from './CompsText';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import NavbarAndSearch from './navbar';
 import Homepage from '../pages/homepage/homepage';
+import { keyWords13 } from '../pages/lectures/13';
 import { keyWords331 } from '../pages/lectures/331';
 
 
@@ -31,6 +32,9 @@ const navCompsList = list(navComponents);
 const pushedRoutes = [];
 for (let i=0; i<navCompsList.length; i++) {
     pushedRoutes.push(<Route key={navCompsList[i]} path={navCompsList[i]} element={React.createElement(navComponents[navCompsList[i]])} />)
+}
+for (let i=0; i<keywordsCompsList.length; i++) {
+    pushedRoutes.push(<Route key={fixedKwEncoded[i]} path={fixedKwEncoded[i]} element={React.createElement(keywordsComponents[keyWords13[i]])} />)    
 }
 for (let i=0; i<keywordsCompsList.length; i++) {
     pushedRoutes.push(<Route key={fixedKwEncoded[i]} path={fixedKwEncoded[i]} element={React.createElement(keywordsComponents[keyWords331[i]])} />)    
