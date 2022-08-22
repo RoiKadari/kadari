@@ -9,7 +9,7 @@ function ComponentBuilder(array){
 }
 
 const keywordsComponents =
-ComponentBuilder(keyWords13 & keyWords331);
+ComponentBuilder(keyWords13, keyWords331);
 
 
 
