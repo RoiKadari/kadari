@@ -157,6 +157,7 @@
 
 a {
   cursor: pointer;
+  white-space: nowrap;
 }
 /* a {
 text-decoration: none;
