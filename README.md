@@ -7,7 +7,7 @@
 4. תחת תיקיית המאמרים לשכפל דף, לשנות לו את השם ולערוך בו את השינויים:
     a. import text from '____'
     b. keyWords____ (מופיע כמה פעמים בדף)
-    c. מילות מפתח לפי הקטלוג
+    c. מילות מפתח לפי הקטלוג, כרגע לא מילות מפתח של מספר
     d. class name -  רווח כותבים מחובר (תחתון) ומרכאות של ראשי תיבות כותבים שני איי  
     e. header - כותרת, עיתון, תאריך עברי (למצוא בלוח שנה באינטרנט) ותאריך לועזי
     f. export default
@@ -20,6 +20,7 @@
 7. תיקייה routing, CompsText.js:
     a. import class name
     b. in textComponents = class name
+8. folder lectures, main, in the subject page add the title of the lecture
 
 
 
