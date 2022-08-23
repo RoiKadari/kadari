@@ -157,6 +157,13 @@
 
 a {
   cursor: pointer;
+}
+
+ul {
+  white-space: nowrap;
+}
+
+span {
   white-space: nowrap;
 }
 /* a {
