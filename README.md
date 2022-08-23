@@ -16,17 +16,11 @@
     b. keyWords__.forEach ...
 6. תיקייה pages, keywordsPages.js:
     a. import keyWords__ from "____"
-    b. concat(keyWords__)
-7. תיקייה routing, CompsKeywords.js:
-    a. import keyWords__ from "____"
-    b. ComponentBuilder (keyWords__)    
-8. תיקייה routing, CompsText.js:
+    b. concat(keyWords__)  
+7. תיקייה routing, CompsText.js:
     a. import class name
     b. in textComponents = class name
-9. תיקייה routing, main.js:
-    a. import keyWords__ from "____" 
-    b. pushedRoutes
-    c.
+
 
 
 
