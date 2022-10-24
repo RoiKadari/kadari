@@ -5,8 +5,9 @@ import shraga from "./shraga.jpg";
 import hatima from "./hatima.jpg";
 
 
-const Homepage = () => {
 
+const Homepage = () => {  
+    
     return (
         <div id="homepage">
             <header className="Homepage-header BG-image">
@@ -15,12 +16,12 @@ const Homepage = () => {
                     שרגא קדרי
                 </p>         
                 <p className="title2">
-                    הסופר ויצירתו
                 </p>
+                    הסופר ויצירתו
                 <p className="title3">
-                תרס"ז - תשמ"ב &nbsp;&nbsp;
                 1982 - 1907
                 </p>
+                תרס"ז - תשמ"ב &nbsp;&nbsp;
             </div>
             </header>
             <div>

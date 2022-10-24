@@ -1,7 +1,11 @@
 import "../lectures/main/lectures.css";
 import React, { Component, createRef } from 'react';
 import PrismaZoom from 'react-prismazoom';
-import text from '../../text/סיפורים/4a.jpg';
+import storage from '../../firebase';
+import { ref, getDownloadURL } from "firebase/storage";
+getDownloadURL(ref(storage, '4a.jpg')).then((url) => {
+  document.getElementById('4a').setAttribute('src', url);
+  })
 
 
 export const keyWords4 = 
@@ -68,7 +72,7 @@ class דרכו_של_אב_ודרכה_של_אם extends Component {
 
             <section className="App-wrapper">
               <PrismaZoom className="App-zoom" onZoomChange={this.onZoomChange} maxZoom={8} ref={this.prismaZoom}>
-                <img src={text} alt="" className="App-image"/>
+                <img src="" alt="" id="4a" className="App-image"/>
               </PrismaZoom> </section>
               <footer className="App-footer">
                 <div className="App-indicator">

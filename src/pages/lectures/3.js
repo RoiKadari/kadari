@@ -1,8 +1,12 @@
 import "./main/lectures.css";
 import React, { Component, createRef } from 'react';
 import PrismaZoom from 'react-prismazoom';
-import text from '../../text/חינוך/3.jpg';
-
+import storage from '../../firebase';
+import { ref, getDownloadURL } from "firebase/storage";
+import AddComment, { commentNum } from "../../addComment";
+getDownloadURL(ref(storage, '3.jpg')).then((url) => {
+  document.getElementById('3').setAttribute('src', url);
+  })
 
 export const keyWords3 = 
 
@@ -55,6 +59,7 @@ class כל_נדרי_והוראת_התנiiך extends Component {
     
     
       render() {
+        commentNum.unshift("3")
         return (
           <div>
             
@@ -67,7 +72,7 @@ class כל_נדרי_והוראת_התנiiך extends Component {
 
             <section className="App-wrapper">
               <PrismaZoom className="App-zoom" onZoomChange={this.onZoomChange} maxZoom={8} ref={this.prismaZoom}>
-                <img src={text} alt="" className="App-image"/>
+                <img src="" alt="" id="3" className="App-image"/>
               </PrismaZoom> </section>
               <footer className="App-footer">
                 <div className="App-indicator">
@@ -91,6 +96,7 @@ class כל_נדרי_והוראת_התנiiך extends Component {
                 </ul>
             </div> */}
             <br/>
+            {/* <AddComment /> */}
           </div>
         )
       }

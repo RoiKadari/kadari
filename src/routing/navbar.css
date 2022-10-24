@@ -3,7 +3,7 @@ nav, input {
     display:inline-block;
 }
 
-input {
+#txtSearch {
     float: left;
     border: none;
     font-size: large;
@@ -12,6 +12,10 @@ input {
     background-repeat: no-repeat;
     padding: 5px 3px;
 } 
+
+#txtSearch{
+    
+}
 
 .resultsStl {
     position: absolute;

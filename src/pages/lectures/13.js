@@ -1,7 +1,11 @@
 import "./main/lectures.css";
 import React, { Component, createRef } from 'react';
 import PrismaZoom from 'react-prismazoom';
-import text from '../../text/מדיניות/13.jpg';
+import storage from '../../firebase';
+import { ref, getDownloadURL } from "firebase/storage";
+getDownloadURL(ref(storage, '13.jpg')).then((url) => {
+  document.getElementById('13').setAttribute('src', url);
+  })
 
 
 export const keyWords13 = 
@@ -71,7 +75,7 @@ class על_הסוציאליזם_הנופל extends Component {
 
             <section className="App-wrapper">
               <PrismaZoom className="App-zoom" onZoomChange={this.onZoomChange} maxZoom={8} ref={this.prismaZoom}>
-                <img src={text} alt="" className="App-image"/>
+                <img src="" alt="" id="13" className="App-image"/>
               </PrismaZoom> </section>
               <footer className="App-footer">
                 <div className="App-indicator">

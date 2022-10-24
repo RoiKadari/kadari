@@ -4,3 +4,12 @@ body {
   font-family: 'Assistant', sans-serif;
   direction: rtl;
 }
+
+.onSubmit {
+  direction: rtl; 
+  text-align: center;
+}
+
+#comment {
+  margin-left: 10px;
+}
