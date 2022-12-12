@@ -5,6 +5,7 @@ import Stories from "../pages/lectures/main/stories";
 import Lectures from '../pages/lectures/main/lectures';
 import Pictures from "../pages/pictures/pictures";
 import Emunah from "../pages/lectures/main/emunah";
+import Hespedim from "../pages/lectures/main/hespedim";
 import Chinuch from "../pages/lectures/main/chinuch";
 import Mediniyut from '../pages/lectures/main/mediniyut';
 
@@ -17,6 +18,7 @@ const navComponents = {
     Stories,
     Pictures,
     Emunah,
+    Hespedim,
     Chinuch,
     Mediniyut,
      

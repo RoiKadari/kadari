@@ -13,6 +13,10 @@ const Lectures = () => {
           <header className="subject">אמונה</header></a>
       </div>
       <div className="card">
+        <a href="hespedim"><img src={pray} alt="" className="lecImg"/>
+          <header className="subject">הספדים</header></a>
+      </div>
+      <div className="card">
         <a href="chinuch"><img src={kid} alt="" className="lecImg"/> 
         <header className="subject">חינוך</header></a>
       </div>
