@@ -1,6 +1,6 @@
 import "./lectures.css";
 
-let titles = ["בארזים נפלה שלהבת", "על הסוציאליזם הנופל"];
+let titles = ["אחדות יהודית אחרי קום המדינה", "בארזים נפלה שלהבת", "על הסוציאליזם הנופל"];
 
 let divvedTitles = [];
 for (let i=0; i<titles.length; i++) {
