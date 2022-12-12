@@ -3,6 +3,7 @@ import React, { Component, createRef } from 'react';
 import PrismaZoom from 'react-prismazoom';
 import storage from '../../firebase';
 import { ref, getDownloadURL } from "firebase/storage";
+import AddComment, { commentNum } from "../../addComment";
 getDownloadURL(ref(storage, '6.jpg')).then((url) => {
   document.getElementById('6').setAttribute('src', url);
   })
@@ -58,6 +59,7 @@ class אמת_ואמונה extends Component {
     
     
       render() {
+        commentNum.unshift("6")
         return (
           <div>
             
@@ -94,6 +96,7 @@ class אמת_ואמונה extends Component {
                 </ul>
             </div> */}
             <br/>
+            <AddComment />
           </div>
         )
       }

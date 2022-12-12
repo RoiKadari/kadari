@@ -6,6 +6,7 @@ import { getAnalytics } from "firebase/analytics";
 const firebaseConfig = {
   apiKey: "AIzaSyANr-4V8gh3Yca4NiC-mIeUKCKZ4pkK6Ws",
   authDomain: "kadari-75015.firebaseapp.com",
+  databaseURL: "https://kadari-75015-default-rtdb.firebaseio.com",
   projectId: "kadari-75015",
   storageBucket: "kadari-75015.appspot.com",
   messagingSenderId: "1057055123667",

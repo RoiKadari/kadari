@@ -96,7 +96,7 @@ class כל_נדרי_והוראת_התנiiך extends Component {
                 </ul>
             </div> */}
             <br/>
-            {/* <AddComment /> */}
+            <AddComment />
           </div>
         )
       }
